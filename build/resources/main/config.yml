@@ -1,0 +1,51 @@
+Anvil_Fixer:
+  # Fix_level中 level处于1-2之间 因为铁砧只有三个状态
+  # In Fix_level, level should be between 1-2 because iron anvil only has 3 states
+  # Iron_Ingot 铁锭 Iron_Block 铁块 Obsidian 黑曜石
+  # 允许添加更多物品以修复
+  # Allow more items to be added for repairing
+  # 不知道如何添加新的物品请看config.md
+  # If you don't know how to add a new item, please see config.md
+  # 由于我的懒惰没有去写玩家提示 所以提示需要单独修改构建
+  # Because I'm lazy and haven't written player tips, you need to modify the tips separately
+  enable: true # 开启或者关闭插件 enable or disable the plugin
+  Item:
+    Iron_Ingot:
+      id: minecraft:iron_ingot # 铁锭的ID iron items ID
+      enable: true # 开启或者关闭铁锭的修复 enable or disable the repair of iron items
+      chance: 0.11 # 铁锭的修复几率 chance of iron items being repaired (0-1)
+      tips:
+        name: "铁锭" # 您希望在客户端提示的名称 tips name you want to see in the client
+      Fix_level:
+        Max:
+          level: 2 # 铁锭的最大修复等级 max repair level of iron items (1-2)
+          chance: 0.1 # 铁锭的最大修复几率 chance of iron items being fully repaired (0-1)
+        Min:
+          level: 1 # 铁锭的最小修复等级 min repair level of iron items (1-2)
+          chance: 0.9 # 铁锭的最小修复几率 chance of iron items being partially repaired (0-1)
+    Iron_Block:
+      id: minecraft:iron_block # 铁块的ID iron block ID
+      enable: true # 开启或者关闭铁块的修复 enable or disable the repair of iron blocks
+      chance: 1 # 铁块的修复几率 chance of iron blocks being repaired (0-1)
+      tips:
+        name: "铁块" # 您希望在客户端提示的名称 tips name you want to see in the client
+      Fix_level:
+        Max:
+          level: 2 # 铁块的最大修复等级 max repair level of iron blocks (1-2)
+          chance: 0.5 # 铁块的最大修复几率 chance of iron blocks being fully repaired (0-1)
+        Min:
+          level: 1 # 铁块的最小修复等级 min repair level of iron blocks (1-2)
+          chance: 0.5 # 铁块的最小修复几率 chance of iron blocks being partially repaired (0-1)
+    Obsidian:
+      id: minecraft:obsidian # 黑曜石的ID obsidian ID
+      enable: true # 开启或者关闭黑曜石的修复 enable or disable the repair of obsidian
+      chance: 0.1 # 黑曜石的修复几率 chance of obsidian being repaired (0-1)
+      tips:
+        name: "黑曜石" # 您希望在客户端提示的名称 tips name you want to see in the client
+      Fix_level:
+        Max:
+          level: 2 # 黑曜石的最大修复等级 max repair level of obsidian (1-2)
+          chance: 0.1 # 黑曜石的最大修复几率 chance of obsidian being fully repaired (0-1)
+        Min:
+          level: 1 # 黑曜石的最小修复等级 min repair level of obsidian (1-2)
+          chance: 0.9 # 黑曜石的最小修复几率 chance of obsidian being partially repaired (0-1)

@@ -1,0 +1,25 @@
+name: Anvil_Fixer
+version: '1.0-SNAPSHOT'
+main: org.Little100.anvil_Fixer.Anvil_Fixer
+api-version: '1.21'
+authors: [ Little_100 ]
+website: www.Little100.top
+discription: 铁砧修复者
+commands:
+  anvil_fixer_english:
+    description: Show the English version of the unsupported item message
+    usage: /<command>
+  Anvil_Fixer:
+    description: reload config
+    usage: /<command> [reload]
+  AF:
+    description: reload config
+    usage: /<command> [reload]
+
+permissions:
+  anvil_fixer.reload:
+    description: reload config
+    default: op
+  AF.reload:
+    description: reload config
+    default: op
